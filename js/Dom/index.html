@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 활용하기</title>
+  <!--모듈이 되면 head에 넣어도 맨 마지막에 실행되어 밑으로 안가도됨 import, export필요-->
+  <!-- <script type="module" src="./DomExample.js"></script> -->
+  <style>
+    .head{
+      background-color: yellow;
+      color: darkblue;
+      border: 1px solid blue;
+    }
+    h1:hover{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="a b">DOM이란 무엇인가?</h1>
+  <p id="myP">참돔, 옥돔, Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Et cupiditate deleniti provident ipsum doloribus sed at nesciunt illum aperiam.
+    Quae nihil ab voluptates magnam commodi architecto odit et eius ipsum?</p>
+  <p>참돔, 옥돔, Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Et cupiditate deleniti provident ipsum doloribus sed at nesciunt illum aperiam.
+    Quae nihil ab voluptates magnam commodi architecto odit et eius ipsum?</p>
+  <div class="container">
+  테스트입니다.
+  </div>
+
+  <ul>
+    <li>java</li>
+    <li>javaSQL</li>
+    <li>PL/SQL</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>javaScript</li>
+  </ul>
+
+  <h1>DOM이란 무엇인가?</h1>
+
+  <h1 on>DOM이란 무엇인가?</h1>
+
+  <h1>DOM이란 무엇인가?</h1>
+
+  <a href="https://www.daum.net">이동</a>
+
+
+  <ol></ol>
+
+  <button onclick="show();">클릭</button>
+  <article></article>
+
+  <!--p에 접근하는 자바스크립트가 실행되었으나 위에있으면 p가생성되지 않은 상태에서 실행된거라 p못찾아 아래로 내림.-->
+  <script src="./DomExample.js"></script>
+  </body>
+</html>
